@@ -1,16 +1,18 @@
-# 🌀 Queue using Linked List - Insert, Display, and Delete
+#  Queue using Linked List - Insert, Display, and Delete
 
-## 🎯 Aim
+##  Aim
+onsider a sales person selling snacks in a glass jar with maximum capacity of 8 snacks. 
 
-To write a Python program that:
-- Inserts elements into a queue.
-- Displays all inserted elements.
-- Deletes the first element.
-- Displays the updated queue after deletion.
+1. The sales person filling the jar with 5 snacks.
 
+2. Check and print whether the jar is full?
+
+3. Check whether the jar is empty after selling 3 snacks.
+
+4. Print how many snacks left after sales.
 ---
 
-## 🧠 Algorithm
+##  Algorithm
 
 1. **Create a Queue**:
    - Initialize an empty list named `queue`.
@@ -31,8 +33,34 @@ To write a Python program that:
 ---
 
 ## Program
-Add Code Here
+```
+
+from queue import LifoQueue
+
+stack = LifoQueue(maxsize=8)
+
+stack.put('Snack_1')
+stack.put('Snack_2')
+stack.put('Snack_3')
+stack.put('Snack_4')
+stack.put('Snack_5')
+
+print("Present quantity of snacks in the jar: ",stack.qsize(), end=" Snacks")
+print("\nIs the jar full? ", stack.full())
+
+print('\nAfter sales:')
+print(stack.get())
+print(stack.get())
+print(stack.get())
+
+print("\nIs the jar empty? ", stack.empty())
+print("Current quantity of snacks in the jar: ", stack.qsize(), end=" Snacks")
+
+
+```
 
 ## Output
+<img width="966" height="353" alt="image" src="https://github.com/user-attachments/assets/6128dc29-199c-4087-97f8-2e05eabb5f13" />
 
 ## Result
+The program was executed successfully

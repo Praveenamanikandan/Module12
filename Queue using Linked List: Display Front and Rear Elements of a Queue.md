@@ -1,6 +1,6 @@
-# 🔁 Queue using Linked List: Display Front and Rear Elements of a Queue
+# Queue using Linked List: Display Front and Rear Elements of a Queue
 
-## 🎯 Aim
+##  Aim
 
 To write a Python program to:
 - Insert elements into a queue.
@@ -9,7 +9,7 @@ To write a Python program to:
 
 ---
 
-## 🧠 Algorithm
+##  Algorithm
 
 1. **Initialize Queue**:
    - Create an empty list called `queue`.
@@ -29,8 +29,29 @@ To write a Python program to:
 
 ---
 ## Program
-Add code here
+```
+queue = []
+
+queue.append('a')
+queue.append('b')
+queue.append('c')
+
+# Display all elements inserted
+print('Queue after elements are inserted:')
+print(queue)
+
+print('Deleting the first element inserted:')
+print(queue.pop(0))
+
+# Display queue after deletion
+print('Queue after the first elements is deleted:')
+print(queue)
+
+
+```
 
 ## Output
+<img width="867" height="279" alt="image" src="https://github.com/user-attachments/assets/585ab583-f438-4766-bf65-6267d0022b99" />
 
 ## Result
+The Program was executed successfully
